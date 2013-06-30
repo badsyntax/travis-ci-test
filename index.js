@@ -11,5 +11,5 @@ child.stderr.on('data', function (data) {
   process.exit(1);
 });
 
-child.stdin.write('.mystyle{color:reddfdf::}');
+child.stdin.write('.mystyle{color:red;}');
 child.stdin.end();
