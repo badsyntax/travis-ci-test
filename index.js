@@ -1,5 +1,5 @@
 var spawn = require('child_process').spawn;
-var child = spawn('ls');
+var child = spawn('ls', ['-la']);
 
 child.stdout.on('data', function (data) {
   console.log('Success: ' + data);
