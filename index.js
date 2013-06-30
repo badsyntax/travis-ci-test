@@ -13,3 +13,4 @@ child.stderr.on('data', function (data) {
 
 child.stdin.write('.mystyle{color:red;}');
 child.stdin.end();
+
