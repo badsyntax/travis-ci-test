@@ -1,5 +1,5 @@
 var spawn = require('child_process').spawn;
-var child = spawn('ls', ['-la']);
+var child = spawn('sass', ['--version']);
 
 child.stdout.on('data', function (data) {
   console.log('Success: ' + data);
@@ -7,7 +7,7 @@ child.stdout.on('data', function (data) {
 });
 
 child.stderr.on('data', function (data) {
-  console.log('Fail: ' + data);
+  console.log('Fail:' + data);
   process.exit(1);
 });
 
